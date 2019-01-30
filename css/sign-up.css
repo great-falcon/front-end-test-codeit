@@ -1,0 +1,8 @@
+body {
+  padding-top: 50px;
+}
+
+/* For Form message to hide until called */
+#warning_message {
+  display: none;
+}

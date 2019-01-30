@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Companies page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/company-style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                Total Companies <span class="location-in-title"></span>
+              </h4>
+            </div>
+            <div class="panel-body total-companies">
+              <div class="loader-box"><div class="loader2"></div></div>
+              <div class="companies-counter">
+                <p class="counter-count">879</p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary btn-block all-companies-btn"
+              >
+                Back to all Countries
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">List of Companies</h4>
+            </div>
+            <div class="panel-body">
+              <div class="loader-box"><div class="loader2"></div></div>
+              <input
+                class="form-control"
+                id="myInput"
+                type="text"
+                placeholder="Search.."
+              />
+              <div class="list-group companies-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default partners-panel">
+            <div class="panel-heading partners-heading">
+              <h4 class="panel-title">Company partners</h4>
+              <span class="sort-by-area"
+                ><b>Sort by: </b>
+                <span class="sort-by sort-by-name">Name</span>
+                <span class="sort-by sort-by-percent active-down">
+                  Percentage</span
+                >
+              </span>
+            </div>
+            <div class="panel-body partners-body"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">Companies by Location</h4>
+            </div>
+            <div class="panel-body">
+              <div class="loader-box"><div class="loader2"></div></div>
+              <div id="chart-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h4 class="panel-title">News</h4></div>
+            <div class="panel-body news-body">
+              <div class="loader-box"><div class="loader2"></div></div>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#myCarousel"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="#"
+                          ><img class="img-responsive" src="" alt=""
+                        /></a>
+                      </div>
+                      <div class="col-md-8">
+                        <a href="#"><h4></h4></a>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 news-info">
+                        <p>
+                          <em><strong>Author: </strong></em
+                          ><span class="news-author"></span>
+                        </p>
+                        <p>
+                          <em><strong>Public: </strong></em
+                          ><span class="news-date"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img class="img-responsive" src="" alt="" />
+                      </div>
+                      <div class="col-md-8">
+                        <a href="#"><h4></h4></a>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 news-info">
+                        <p>
+                          <em><strong>Author: </strong></em
+                          ><span class="news-author"></span>
+                        </p>
+                        <p>
+                          <em><strong>Public: </strong></em
+                          ><span class="news-date"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/company-main.js"></script>
+  </body>
+</html>
